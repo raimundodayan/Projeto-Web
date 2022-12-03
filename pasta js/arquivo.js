@@ -20,3 +20,19 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 
 
+const imgs = document.getElementById("img4");
+const img = document.querySelectorAll("#img4 img")
+
+let idx = 0;
+
+function carrossel(){
+    idx++;
+
+    if(idx > img.length - 1){
+        idx = 0;
+    }
+
+    imgs.style.transform = `translateX(${-idx * 244.4}px)`
+}
+
+setInterval(carrossel, 3200);

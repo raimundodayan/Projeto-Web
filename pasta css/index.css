@@ -68,14 +68,14 @@ a:hover {
 
 .Container{
 width: 100%;
-height: 490px;
+height: 510px;
 gap: 10px;
 display: flex;
 justify-content: center;
 align-items: center;
 padding-bottom: 60px;
 flex-wrap: wrap;
-background-color: #4d31ee;
+background-color: #23a4d3;
 margin-top: 75px;
 
 
@@ -102,22 +102,21 @@ margin-top: 10px;
 .Bloco-1 h1{
   margin-left: 30px;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 19px;
  color: aliceblue;
 
  
 }.Bloco-1 h4{
   
 font-family: 'Noto Sans KR', sans-serif;
-font-size: 31px;
-margin-bottom: 0px;
-margin-top: 10px;
+font-size: 30px;
+margin-bottom: 10px;
 }
 
 .Bloco-1 p{
 
   font-family: 'Inter', sans-serif;
-font-size: 23px;
+font-size: 19px;
 font-weight: 500;
 color: rgb(233, 239, 245);
 
@@ -148,27 +147,22 @@ color: rgb(233, 239, 245);
 
 
 .Bloco-2 #Logo{
-width: 370px;
-height: 370px;
+width: 460px;
+height: 460px;
 border-radius: 1000px;
 display: flex;
 background-color: #f0f0f0;
 position: relative;
-top: 70px;
+top: 30px;
 left: 30px;
 
 }
 #Imagem-template-inicio-site{
-width: 500px;
-height: 410px;
+width: 530px;
+height: 470px;
 position: relative;
-bottom: 290px;
-right: 70px;
-}
-#imagem-template-mobile-inicio-site{
-  width: 170px;
-height: 170px;
-visibility: hidden;
+bottom: 430px;
+right: 30px;
 }
 
 
@@ -186,7 +180,7 @@ align-items: center;
 flex-wrap: wrap;
 padding-top: 5px;
 position: relative;
-bottom: 210px;
+bottom: 230px;
 box-shadow: 1px 1px 10px 1px black;
 }
 #Caixa-1{
@@ -273,7 +267,7 @@ box-shadow: 1px 1px 10px 1px black;
 
 .Inicio-site{
  position: relative;
-top: 240px;
+top: 130px;
 
 }
 .Inicio-site h1
@@ -292,7 +286,6 @@ font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
- padding-top: 40px;
   
 }
 
@@ -306,13 +299,9 @@ justify-content: center;
 align-items: center;
 
 }.Bloco-Carrosel{
-  width: 430px;
+  width: 230px;
   height: 530px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
 }.Bloco-Informacao{
   width: 500px;
   height: 530px;
@@ -346,21 +335,26 @@ margin-top: 10px;
 
 
 
-
-.imagem-aplicativo{
-  width: 260px;
-  height: 530px;
- 
+.carrossel{
+  position: sticky;
+  display: flex;
+  transition: transform 1.6s ease-in-out;
+  transform: translate(0);
+  gap: 20px;
+  
+}
+#img4{
+  width: 500px;
+  height: 500px;
 }
 
 
 
 
 #Titulo-site-do-meio{
-  margin-top: 120px;
   font-size: 37px;
- margin-bottom: 80px;
-
+ margin-bottom: 70px;
+ padding-bottom: 20px;
 }
 
 
@@ -368,21 +362,19 @@ margin-top: 10px;
 width: 100%;
 height: 400px;
 align-items: center;
+margin-top: 50px;
 display: flex;
-margin-top: 10px;
 justify-content: space-between;
-
+background-color: #23a4d3;
 
 }
 .Bloco-Domeio-logo{
   width: 600px;
   height: 400px;
+  background-color: #157a9e;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 70px;
-  margin: 0 auto;
-  background-color: #7B68EE;
 
 }.Bloco-Domeio-logo div{
   width: 370px;
@@ -392,7 +384,6 @@ justify-content: space-between;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 10px;
 }.Bloco-Domeio-logo div img{
   height: 300px;
   width: 300px;
@@ -401,19 +392,19 @@ justify-content: space-between;
 .Bloco-Domeio-descricao{
   width: 800px;
  height: 400px;
- 
+  background-color: #1a353f;
   margin: 0 auto;
 }
-
-.Bloco-Domeio-descricao h4{
-  font-family: 'Inter', sans-serif;
-  font-size: 25px;
-  margin-left: 3%;
+.Bloco-Domeio-descricao i{
+  color:azure;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 .Bloco-Domeio-descricao p{
   font-family: 'Inter', sans-serif;
-  font-size: 25px;
-font-weight: 700;
+  font-size: clamp(1em, 1em + 1vw, 1.25rem);
+font-weight: 500;
 color:rgb(0, 0, 0) ;
 margin-left: 50px;
 }
@@ -423,13 +414,52 @@ margin-left: 50px;
 
 /*  Regra de negocios, missao, vissao e valores  */
 
+.regra-vissao-missao-valores {
+ margin-top: 100px;
+ display: flex;
+ flex-wrap: wrap;
+}
+.regra-vissao-missao-valores div{
+width: 500px;
+height: 270px;
+margin: 0 auto;
+background-color: #157a9e;
+box-shadow: 1px 1px 10px 1px black;
+}
+
+.regra-vissao-missao-valores #Visao{
+  margin-top: 50px;
+}
+.regra-vissao-missao-valores #Valores{
+  margin-top: 50px;
+}
+
+.regra-vissao-missao-valores div i{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #cddadf;
+}
+
+.regra-vissao-missao-valores div p{
+ font-size: 23px;
+ font-family: 'Inter', sans-serif;
+ margin-left: 20px;
+ color: antiquewhite;
+}
+.regra-vissao-missao-valores div ul{
+  font-size: 23px;
+  font-family: 'Inter', sans-serif;
+  margin-left: 45px;
+  color: antiquewhite;
+}
 
 
 .Fim-Do-Site{
   width: 100%;
   height: 250px;
-  background-color: #3a1ce0 ;
-  margin-top: 120px;
+  background-color: #11617e;
+  margin-top: 70px;
   
 }.Fim-Do-Site div{
   font-size: 25px;
